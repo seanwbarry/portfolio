@@ -188,6 +188,7 @@ img, a {
   margin: 0 auto;
   background-color:#eaeaea;
   border: blue solid 1px;
+  
 }
 
 img {
@@ -197,7 +198,6 @@ img {
   padding: 1rem;
   max-height: 13rem;
   border:solid #bcbcbc 1px;
-  line-height: 0;
 }
 
 .timeline:after {
