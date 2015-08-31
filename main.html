@@ -29,7 +29,7 @@
 </nav>
 <body>
 	<section class="content">
-		<h2><a id="about">About me</a></h2>
+		<h2 id="h2About"><a id="about">About me</a></h2>
 		<h3>Things 1</h3>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non scelerisque velit. Phasellus lorem ante, rutrum eu ex vel, semper semper mi. Nunc commodo commodo venenatis. Cras mi felis, bibendum sit amet euismod hendrerit, vulputate ac ligula. Quisque elementum orci eu ipsum venenatis ullamcorper. Fusce eget molestie elit, vel dictum metus. Donec faucibus velit sit amet eleifend lobortis. Nam gravida tempor pulvinar. Aenean efficitur mauris eu diam commodo, ac blandit est porttitor. Proin in lacus a nibh varius aliquam sed in orci. Sed molestie semper odio non posuere.
@@ -43,60 +43,41 @@
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non scelerisque velit. Phasellus lorem ante, rutrum eu ex vel, semper semper mi. Nunc commodo commodo venenatis. Cras mi felis, bibendum sit amet euismod hendrerit, vulputate ac ligula. Quisque elementum orci eu ipsum venenatis ullamcorper. Fusce eget molestie elit, vel dictum metus. Donec faucibus velit sit amet eleifend lobortis. Nam gravida tempor pulvinar. Aenean efficitur mauris eu diam commodo, ac blandit est porttitor. Proin in lacus a nibh varius aliquam sed in orci. Sed molestie semper odio non posuere.
 		</p>
 	</section>
-	<section class="content" id="gallery">
-		<h2><a id="projects">Projects</a></h2>
-		<ul>
-			<li>
-				<div class="item">
-					<a href="./images/blahblahblah.png">
-						<img src="./images/blahblahblah.png" alt="Times hack"/>
-					</a>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://codepen.io/sean1234567/pen/WvENwY">
-						<img src="./images/aboutMeThinkful0.png" alt="About me Thinkful version"/>
-					</a>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://codepen.io/sean1234567/pen/LVLvMa">
-						<img src="./images/aboutMeVersion1.png" alt="About me version 1"/>
-					</a>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://codepen.io/sean1234567/pen/aOybWZ">
-						<img src="./images/aboutMeVersion2.png" alt="About me version 2"/>
-					</a>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://codepen.io/sean1234567/pen/jPdjJY">
-						<img src="./images/aboutMeVersion3.png" alt="About me version 3"/>
-					</a>
-				</div>
-			</li>		
-		</ul>
-	</section>
-	<section>
+	<section id="timeline">
+		<h2 id="h2Projects"><a id="projects">Projects</a></h2>
 		<div class="timeline animated">
 			<div class="timelineRow">
 				<div class="timelineTime">
-					<small>date</small>year
+					<small>14th June</small>2015
 				</div>
 				<div class="timelineIcon">
-					<div>asdf</div>
 				</div>
 				<div class="panel timelineContent">
 					<div class="panelBody">
-						<h3>title</h3>
+						<h3>Introduction to HTML &amp; CSS</h3>
 						<p>
 							some text some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text.
+						</p>
+						<div class="item">
+							<a href="http://codepen.io/sean1234567/pen/LVLvMa">
+								<img src="./images/aboutMeVersion1.png" alt="About me version 1"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="timelineRow">
+				<div class="timelineTime">
+					<small>15th June</small>2015
+				</div>
+				<div class="timelineIcon">
+					
+				</div>
+				<div class="panel timelineContent">
+					<div class="panelBody">
+						<h3>HTML & CSS changing things around</h3>
+						<p>
+							One of Thinkful's first projects is to manipulate the New York Times' website to build your understanding of the browser's interaction with websites.
 						</p>
 						<div class="item">
 							<a href="./images/blahblahblah.png">
@@ -106,12 +87,12 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="timelineRow">
 				<div class="timelineTime">
-					<small>date</small>year
+					<small>date</small>2015
 				</div>
 				<div class="timelineIcon">
-					<div>asdf</div>
 				</div>
 				<div class="panel timelineContent">
 					<div class="panelBody">
@@ -119,15 +100,19 @@
 						<p>
 							some text some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text.
 						</p>
+						<div class="item">
+							<a href="http://codepen.io/sean1234567/pen/WvENwY">
+								<img src="./images/aboutMeThinkful0.png" alt="About me Thinkful version"/>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="timelineRow">
 				<div class="timelineTime">
-					<small>date</small>year
+					<small>date</small>2015
 				</div>
 				<div class="timelineIcon">
-					<div>asdf</div>
 				</div>
 				<div class="panel timelineContent">
 					<div class="panelBody">
@@ -135,15 +120,19 @@
 						<p>
 							some text some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text.
 						</p>
+						<div class="item">
+							<a href="http://codepen.io/sean1234567/pen/aOybWZ">
+								<img src="./images/aboutMeVersion2.png" alt="About me version 2"/>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="timelineRow">
 				<div class="timelineTime">
-					<small>date</small>year
+					<small>date</small>2015
 				</div>
 				<div class="timelineIcon">
-					<div>asdf</div>
 				</div>
 				<div class="panel timelineContent">
 					<div class="panelBody">
@@ -151,22 +140,11 @@
 						<p>
 							some text some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text.
 						</p>
-					</div>
-				</div>
-			</div>
-			<div class="timelineRow">
-				<div class="timelineTime">
-					<small>date</small>year
-				</div>
-				<div class="timelineIcon">
-					<div>asdf</div>
-				</div>
-				<div class="panel timelineContent">
-					<div class="panelBody">
-						<h3>title</h3>
-						<p>
-							some text some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text.
-						</p>
+						<div class="item">
+							<a href="http://codepen.io/sean1234567/pen/jPdjJY">
+								<img src="./images/aboutMeVersion3.png" alt="About me version 3"/>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

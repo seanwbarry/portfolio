@@ -1,4 +1,4 @@
-/*$(function () { 
+$(function () { 
 
 //H1 JS
 	var interval=0;
@@ -10,7 +10,7 @@
 
 
 });
-*/
+
 (function () {
 	$(function () {
 		var timelineAnimate = function (elem) {
@@ -21,8 +21,6 @@
 				console.log(bottomOfObject);
 				if(bottomOfWindow > bottomOfObject) {
 					return $(this).addClass("active");
-				} else {
-					return $(this).removeClass("active");
 				}
 			});
 		};
