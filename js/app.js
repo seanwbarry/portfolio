@@ -8,28 +8,21 @@ $(function () {
 		elem.style.marginTop = (++interval%3)*(-height)+'rem';
 	}, 2000);
 
-
-});
-
-(function () {
-	$(function () {
-		var timelineAnimate = function (elem) {
-			return $(".timeline.animated .timelineRow").each(function(i) {
-				var bottomOfObject = $(this).offset().top + $(this).outerHeight();
-				var bottomOfWindow = $(window).scrollTop() + $(window).height();
-				console.log(bottomOfWindow);
-				console.log(bottomOfObject);
-				if(bottomOfWindow > bottomOfObject) {
-					return $(this).addClass("active");
-				}
-			});
-		};
-		timelineAnimate();
-		return $(window).scroll(function () {
-			return timelineAnimate();
+	var timelineAnimate = function () {
+		$(".timeline.animated .timelineRow").each(function() {
+			var bottomOfObject = $(this).offset().top + $(this).outerHeight();
+			var bottomOfWindow = $(window).scrollTop() + $(window).height();
+			console.log(bottomOfWindow);
+			console.log(bottomOfObject);
+			if(bottomOfWindow > bottomOfObject) {
+				$(this).addClass("active");
+			}
 		});
-	});
-}).call(this);
+	};
+	$(window).scroll(
+		timelineAnimate
+	);
+});
 
 
 //need to find a way to get the bottom of the window to match up to the bottom of the object...
